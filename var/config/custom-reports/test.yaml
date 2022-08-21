@@ -1,0 +1,134 @@
+pimcore:
+    custom_report:
+        definitions:
+            test:
+                name: test
+                sql: ''
+                dataSourceConfig:
+                    -
+                        sql: '*'
+                        from: assets
+                        where: ''
+                        groupby: ''
+                        type: sql
+                columnConfiguration:
+                    -
+                        name: id
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel574-1
+                    -
+                        name: parentId
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel574-2
+                    -
+                        name: type
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel574-3
+                    -
+                        name: filename
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel574-4
+                    -
+                        name: path
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel574-5
+                    -
+                        name: mimetype
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel574-6
+                    -
+                        name: creationDate
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel574-7
+                    -
+                        name: modificationDate
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel574-8
+                    -
+                        name: userOwner
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel574-9
+                    -
+                        name: userModification
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel574-10
+                    -
+                        name: customSettings
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel574-11
+                    -
+                        name: hasMetaData
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel574-12
+                    -
+                        name: versionCount
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel574-13
+                niceName: ''
+                group: ''
+                groupIconClass: ''
+                iconClass: ''
+                menuShortcut: true
+                reportClass: ''
+                chartType: ''
+                pieColumn: null
+                pieLabelColumn: null
+                xAxis: null
+                yAxis: {  }
+                modificationDate: 1660030439
+                creationDate: 1659942407
+                shareGlobally: true
+                sharedUserNames: {  }
+                sharedRoleNames: {  }

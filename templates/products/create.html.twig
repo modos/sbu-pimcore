@@ -1,0 +1,78 @@
+{% extends "./layouts/base.html.twig" %}
+
+{% block title %}Products - Create{% endblock %}
+{% block head %}
+    {{ parent() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+{% block content %}
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+                    <div id="successAlert" class="alert alert-success w-25 mt-2" role="alert" hidden>
+  Product Added Successfuly.
+</div>
+
+            <div class="text-center mt-1">
+            <h1>Create Product</h1>
+            </div>
+
+            <div class="w-25 mt-3">
+            <div class="mb-3">
+  <label class="form-label">Product Name (En)</label>
+  <input type="text" class="form-control" id="nameen" placeholder="Enter product name (en)">
+</div>
+            <div class="mb-3">
+  <label class="form-label">Product Name (Fa)</label>
+  <input type="text" class="form-control" id="namefa" placeholder="Enter product name (fa)">
+</div>
+
+            {# <div class="mb-3">
+  <label class="form-label">Category</label>
+  <select class="form-select" aria-label="Default select example">
+  <option selected>Select product category</option>
+  <option value="1">Laptop</option>
+  <option value="2">Clothes</option>
+  <option value="3">Home Appliance</option>
+</select>
+</div> #}
+
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+  <textarea class="form-control" id="description" rows="3"></textarea>
+</div>
+
+            <div class="mb-3">
+  <label class="form-label">Price</label>
+  <input type="number" class="form-control" id="price" placeholder="Enter product ptice">
+</div>
+  {# <div class="mb-3">
+  <label class="form-label">Thumbnail</label>
+  <input type="file" class="form-control" id="inputGroupFile01">
+</div> #}
+        
+
+            <div>
+             <h5>Attributes</h5>
+             <div class="row ">
+                <div class="col">
+                 <label class="form-label">Width</label>
+  <input type="number" class="form-control" id="width">
+                </div>
+                <div class="col">
+                                 <label class="form-label">Height</label>
+  <input type="number" class="form-control" id="height">
+                </div>
+                <div class="col">
+                                 <label class="form-label">Weight</label>
+  <input type="number" class="form-control" id="weight">
+                </div>
+             </div>
+             <button type="submit" id="submitButton" class="btn btn-primary my-3">Add</button>
+            </div>
+        </div>
+    </div
+    
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends "./layouts/base.html.twig" %}
+
+{% block title %}Products{% endblock %}
+{% block head %}
+    {{ parent() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+{% block content %}
+
+    <div class="container-fluid bg-danger vh-100">
+        <h1 class="text-center text-white">All Products</h1>
+        <div class="row">
+            {% for item in items %}
+        <div class="card mx-2 mt-1" style="width: 18rem;">
+  <img src={{item[1]}} class="card-img-top">
+  <div class="card-body">
+    <h5 class="card-title">{{item[0]}}</h5>
+    <p class="card-text">{{item[2]}}</p>
+    <p>price: {{item[3]}}</p>
+    <p>category: {{item[4]}}</p>
+  </div>
+</div>
+    {% endfor %}
+        </div>
+   </div
+    
+{% endblock %}

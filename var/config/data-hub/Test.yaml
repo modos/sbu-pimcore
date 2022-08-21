@@ -1,0 +1,211 @@
+pimcore_data_hub:
+    configurations:
+        Test:
+            general:
+                active: true
+                type: graphql
+                name: Test
+                description: ''
+                group: ''
+                sqlObjectCondition: ''
+                modificationDate: 1658381012
+                path: null
+                createDate: 1657553349
+            schema:
+                queryEntities:
+                    Customer:
+                        id: Customer
+                        name: Customer
+                        columnConfig:
+                            columns:
+                                -
+                                    attributes:
+                                        attribute: name
+                                        label: Name
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: thumb
+                                        label: Thumb
+                                        dataType: image
+                                    isOperator: false
+                    Product:
+                        id: Product
+                        name: Product
+                        columnConfig:
+                            columns:
+                                -
+                                    attributes:
+                                        attribute: name
+                                        label: Name
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: category
+                                        label: Category
+                                        dataType: select
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: description
+                                        label: Description
+                                        dataType: textarea
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: price
+                                        label: Price
+                                        dataType: numeric
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: thumb
+                                        label: Thumb
+                                        dataType: image
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: Height
+                                        label: Height
+                                        dataType: quantityValue
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: Width
+                                        label: Width
+                                        dataType: quantityValue
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: Weight
+                                        label: Weight
+                                        dataType: quantityValue
+                                    isOperator: false
+                    Order:
+                        id: Order
+                        name: Order
+                        columnConfig:
+                            columns:
+                                -
+                                    attributes:
+                                        attribute: customer
+                                        label: Customer
+                                        dataType: manyToOneRelation
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: products
+                                        label: Products
+                                        dataType: manyToManyObjectRelation
+                                    isOperator: false
+                mutationEntities:
+                    Customer:
+                        id: Customer
+                        name: Customer
+                        update: true
+                        create: true
+                        delete: true
+                        columnConfig:
+                            columns:
+                                -
+                                    isOperator: true
+                                    attributes:
+                                        label: 'n'
+                                        type: operator
+                                        class: LocaleCollector
+                                        childs:
+                                            -
+                                                isOperator: false
+                                                attributes:
+                                                    label: 'Name (name)'
+                                                    type: value
+                                                    class: DefaultValue
+                                                    attribute: name
+                                                    dataType: input
+                                                    childs: {  }
+                                    key: '#62d626396fa67'
+                                -
+                                    attributes:
+                                        attribute: thumb
+                                        label: Thumb
+                                        dataType: image
+                                    isOperator: false
+                    Order:
+                        id: Order
+                        name: Order
+                        update: true
+                        create: true
+                        delete: true
+                        columnConfig:
+                            columns:
+                                -
+                                    attributes:
+                                        attribute: customer
+                                        label: Customer
+                                        dataType: manyToOneRelation
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: products
+                                        label: Products
+                                        dataType: manyToManyObjectRelation
+                                    isOperator: false
+                specialEntities:
+                    document:
+                        read: true
+                        create: true
+                        update: true
+                        delete: true
+                    document_folder:
+                        read: true
+                        create: false
+                        update: false
+                        delete: true
+                    asset:
+                        read: true
+                        create: true
+                        update: true
+                        delete: true
+                    asset_folder:
+                        read: true
+                        create: true
+                        update: true
+                        delete: true
+                    asset_listing:
+                        read: true
+                        create: true
+                        update: false
+                        delete: true
+                    object_folder:
+                        read: true
+                        create: true
+                        update: true
+                        delete: true
+            security:
+                method: datahub_apikey
+                apikey: 2c6a75e8cb0cc6acda53b4bb4471e64c
+                skipPermissionCheck: false
+                disableIntrospection: false
+            workspaces:
+                asset:
+                    -
+                        read: true
+                        cpath: /
+                        create: true
+                        update: false
+                        delete: false
+                        id: extModel784-1
+                document: {  }
+                object:
+                    -
+                        read: true
+                        cpath: /
+                        create: true
+                        update: true
+                        delete: true
+                        id: extModel2588-1
+            permissions:
+                user: {  }
+                role: {  }

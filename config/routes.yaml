@@ -1,0 +1,11 @@
+_pimcore:
+    resource: "@PimcoreCoreBundle/Resources/config/routing.yml"
+
+app:
+    resource: "../src/Controller/"
+    type: annotation
+
+create_product:
+    path: /products/create
+    controller: App\Controller\ProductController::store  
+    methods: POST  
