@@ -1,7 +1,17 @@
-# Pimcore Project Skeleton 
+# Pimcore Project - Shahid Beheshti University 
 
 This skeleton should be used by experienced Pimcore developers for starting a new project from the ground up. 
 If you are new to Pimcore, it's better to start with our demo package, listed below 😉
+
+## Reports
+
+read these reports to understand concepts (persian language):
+<br>
+[Report 1](https://github.com/modos/sbu-pimcore/blob/main/%DA%AF%D8%B2%D8%A7%D8%B1%D8%B4%20%D9%BE%DB%8C%D8%B4%D8%B1%D9%81%D8%AA%20%D9%BE%D8%B1%D9%88%DA%98%D9%87%20%DA%A9%D8%A7%D8%B1%D8%B4%D9%86%D8%A7%D8%B3%DB%8C.pdf)
+<br>
+[Report 2](https://github.com/modos/sbu-pimcore/blob/main/%DA%AF%D8%B2%D8%A7%D8%B1%D8%B4%20%D9%BE%D8%A7%DB%8C%D8%A7%D9%86%DB%8C.pdf)
+<br>
+[Youtube Videos](https://www.youtube.com/playlist?list=PLOSpOyvXnOFfneCOHPcKihHInAJ_csSP_)
 
 ## Getting started
 ```bash
